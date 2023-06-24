@@ -1,6 +1,10 @@
 const NFTs = [
     {
-        name: "H&M"
+        name: "H&M",
+        size: "M",
+        properties: "Cotton",
+        color: "White",
+        brand: "H&M"
     }
 ];
 
@@ -25,9 +29,9 @@ function getTotalSupply() {
 
 listNFTs();
 
-mintNFT({name: "Bench"});
-mintNFT({name: "Penshoppe"});
-mintNFT({name: "Gucci"});
+mintNFT({name: "Bench", size: "L", properties: "Polyester", color: "Black", brand: "Bench"});
+mintNFT({name: "Penshoppe", size: "S", properties: "Cotton", color: "Blue", brand: "Penshoppe"});
+mintNFT({name: "Gucci", size: "M", properties: "Silk", color: "Red", brand: "Gucci"});
 listNFTs();
 
 getTotalSupply();
